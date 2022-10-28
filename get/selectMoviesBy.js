@@ -21,7 +21,7 @@ function selectMoviesBy(
         "select * from movies where " + itemType + " = '" + selectedItem + "';";
     }
   }
-  console.log(selectMovies);
+
   connexionDb.query(selectMovies, functionToCallOnQueryDone);
 }
 

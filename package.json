@@ -4,7 +4,7 @@
   "description": "Film database",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --runInBand",
     "start": "babel-node index.js"
   },
   "repository": {
@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "express": "^4.18.2",
-    "mysql2": "^2.3.3"
+    "mysql2": "^2.3.3",
+    "node-fetch": "^2.6.7"
   }
 }

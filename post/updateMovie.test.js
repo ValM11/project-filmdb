@@ -1,6 +1,6 @@
 import { updateMovie } from "./updateMovie";
 
-const mockConnection = { query: jest.fn((x) => 42 + x) };
+const mockConnection = { query: jest.fn() };
 const titleToTest = "Best movie title";
 const itemsToTest = { runtime: 120, director: "The director" };
 test("updateMovie uses right SQL query", () => {
